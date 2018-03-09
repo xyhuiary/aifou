@@ -1,0 +1,29 @@
+#content {
+    width: 800px;
+    margin: 0 auto;
+    padding: 0 200px;
+}
+
+#content h3 {
+    color: #23a96f;
+    font-size: 32px;
+    text-align: center;
+    margin: 50px 0;
+}
+
+#content p {
+    line-height: 30px;
+    color: #666;
+    font-size: 16px;
+    margin: 10px 0;
+    text-indent: 32px;
+}
+
+#content p.subtitle {
+    color: #23a96f;
+    text-indent: 0;
+}
+
+#content p.indent {
+    text-indent: 0;
+}

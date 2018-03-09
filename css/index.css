@@ -1,0 +1,130 @@
+#nav {
+    text-align: center;
+    height: 60px;
+}
+
+#nav a {
+    padding: 0 30px;
+    font-size: 16px;
+    line-height: 60px;
+    display: inline-block;
+    height: 60px;
+}
+
+#nav a:hover {
+    color: #23A96F;
+    /* height: 57px; */
+    /* border-bottom: 3px solid #23A96F; */
+}
+
+#nav>div{
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+}
+
+#nav .slide{
+    position: absolute;
+    width: 50px;
+    border-top: 3px solid #23A96F;
+    bottom: 0;
+}
+
+#banner {
+    height: 150px;
+    background: #666;
+}
+
+a.rise {
+    transition: all .2s linear;
+}
+
+a.rise:hover {
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+}
+
+#recom_main {
+    margin-top: 60px;
+}
+
+#recom_main .main_img a {
+    float: left;
+    margin-right: 12px;
+    margin-bottom: 12px !important;
+}
+
+#recom_main .main_img a:nth-last-child(n+4) img {
+    width: 594px;
+}
+
+#recom_main .main_img a:nth-child(n+3) img {
+    width: 392px;
+}
+
+#recom_main .main_img a:nth-child(2),
+#recom_main .main_img a:last-child {
+    margin: 0;
+}
+
+#recom_decent {
+    margin-top: 48px;
+    background: #f8f8f8;
+}
+
+#recom_decent h3,
+#recycle h3 {
+    font-size: 28px;
+    padding: 60px 0 25px;
+}
+
+#recom_decent h3 a {
+    text-decoration: underline;
+    font-size: 18px;
+    float: right;
+    margin-top: 12px;
+}
+
+#recom_decent a.rise {
+    float: left;
+    width: 294px;
+    margin: 0 8px 8px 0;
+    background: #fff;
+    text-align: center;
+    padding: 15px 0;
+}
+
+#recom_decent a.rise:nth-child(4n+5) {
+    margin-right: 0;
+}
+
+#recom_decent a.rise img {
+    margin-bottom: 20px;
+}
+
+#recom_decent a.rise p {
+    font-size: 16px;
+    line-height: 25px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    padding: 0 15px;
+}
+
+#recom_decent a.rise p:last-child {
+    font-size: 14px;
+    color: #FF9800;
+}
+
+#recycle a {
+    float: left;
+    margin-bottom: 60px;
+}
+
+#recycle a:nth-child(2) {
+    margin-right: 8px;
+}
+
+#recycle img {
+    width: 596px;
+}

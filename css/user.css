@@ -1,0 +1,65 @@
+body{
+    background: #f8f8f8;
+}
+#uname {
+    height: 115px;
+    background: #23a96f;
+    padding-top: 35px;
+    color: #fff;
+}
+
+#uname a {
+    border-radius: 100%;
+    overflow: hidden;
+    width: 80px;
+    float: left;
+    margin-right: 40px;
+}
+
+#uname p {
+    font-size: 18px;
+    padding: 12px 0 10px;
+}
+
+#uname .phone {
+    color: #bdbdbd;
+    padding-left: 10px;
+}
+
+#uname .alter {
+    margin-left: 30px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#section {
+    padding: 60px 0;
+}
+
+#section .section_l {
+    width: 160px;
+    padding: 30px 0 30px 58px;
+    float: left;
+    background: #fff;
+}
+#section .section_l .list{
+    padding: 10px 0;
+}
+#section .section_l h3{
+    font-size: 16px;
+    line-height: 42px;
+}
+#section .section_l span {
+    color: #999;
+    display: block;
+    line-height: 30px;
+    cursor: pointer;
+}
+#section .section_r{
+    padding: 40px;
+    background: #fff;
+    width: 890px;
+    float: right;
+}
+
+/* 账户 */

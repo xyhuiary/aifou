@@ -1,0 +1,238 @@
+#status .line {
+    padding-top: 60px;
+    height: 60px;
+}
+
+#status .line b {
+    position: absolute;
+    height: 3px;
+    width: 50%;
+    background: #e5e5e5;
+}
+
+#status .line b:nth-child(2) {
+    right: 0;
+}
+
+#status .line p {
+    width: 100px;
+    height: 65px;
+    font-size: 16px;
+    color: #666;
+    position: absolute;
+}
+
+#status .line p:nth-child(4) {
+    left: 50%;
+    margin-left: -50px;
+    text-align: center;
+}
+
+#status .line p:nth-child(5) {
+    right: 0;
+    text-align: right;
+}
+
+#status .line p i {
+    display: block;
+    width: 22px;
+    height: 22px;
+    margin-top: -11px;
+    margin-bottom: 5px;
+    background: #ccc;
+    border-radius: 50%;
+}
+
+#status .line p:nth-child(4) i {
+    margin: -11px auto 5px;
+}
+
+#status .line p:nth-child(5) i {
+    margin-left: 78px;
+}
+
+#status .line p:nth-child(3) {
+    color: #23a96f;
+}
+
+#status .line p:nth-child(3) i {
+    background: #23a96f;
+}
+
+#status .shop>p a {
+    text-decoration: underline;
+}
+
+#status .shop>p a:hover {
+    color: #23a96f;
+}
+
+#status .shop table {
+    width: 100%;
+    color: #999;
+    margin: 10px 0 100px;
+}
+
+#status .shop table tr {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+#status .shop table th {
+    font-weight: 200;
+    height: 54px;
+    background: #f5f5f5;
+}
+
+#status .shop table th:first-child {
+    width: 450px;
+    text-align: left;
+    padding-left: 50px;
+}
+
+#status .shop table th:last-child {
+    width: 140px;
+}
+
+#status .shop table tbody td {
+    text-align: center;
+    color: #333;
+}
+
+#status .shop table tbody td:last-child i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -20px 0 0 -20px;
+    width: 40px;
+    height: 40px;
+    background: url(../images/icon.png);
+    background-position: -295px -395px;
+    cursor: pointer;
+}
+
+#status .shop table tbody td:last-child i:hover {
+    background-position: -395px -395px;
+}
+
+#status .shop table tbody .main {
+    display: inline-block;
+    margin: 20px 0 20px 70px;
+    width: 430px;
+    position: relative;
+}
+
+#status .shop table tbody .main .date {
+    padding-bottom: 20px;
+    text-align: left;
+}
+
+#status .shop table tbody .main .date i {
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    background: url(../images/icon.png);
+    background-position: -600px -800px;
+    position: relative;
+    top: 5px;
+    left: -12px;
+}
+
+#status .shop table tbody .main .date span {
+    color: #23a96f;
+    padding: 0 5px;
+}
+
+#status .shop table tbody .main .list {
+    float: right;
+    width: 300px;
+    text-align: left;
+}
+
+#status .shop table tbody .main .list h3 {
+    color: #666;
+    font-size: 16px;
+    padding: 10px 0 15px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+#status .shop table tbody .main .list p {
+    text-align: left;
+    line-height: 25px;
+    color: #999;
+}
+
+#status .shop table tbody .main .list p span {
+    float: left;
+    width: 80px;
+}
+
+#status .shop table tbody .check {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    margin-top: -20px;
+    width: 40px;
+    height: 40px;
+    background: url(../images/icon.png);
+    background-position: -690px -390px;
+    cursor: pointer;
+}
+
+#status .shop table tbody .check.active {
+    background-position: -590px -90px;
+}
+
+#status .shop table tfoot tr{
+    font-size: 18px;
+    color: #333;
+    height: 80px;
+    border: none;
+}
+#status .shop table tfoot span{
+    margin: 0 30px 0 55px;
+    cursor: pointer;
+    position: relative;
+}
+#status .shop table tfoot span i{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: url(../images/icon.png);
+    background-position: -690px -390px;
+    left: -40px;
+    top: 50%;
+    margin-top: -20px;
+}
+#status .shop table tfoot span i.active{
+    background-position: -590px -90px;
+}
+#status .shop table tfoot a{
+    color: #999;
+    cursor: pointer;
+}
+#status .shop table tfoot td:last-child{
+    text-align: right;
+    font-size: 14px;
+    position: relative;
+}
+#status .shop table tfoot b{
+    font-size: 24px;
+    color: #ff9900;
+    font-weight: 400;
+}
+#status .shop table tfoot a.btn{
+    position: absolute;
+    top: 50px;
+    right: 0;
+    width: 180px;
+    height: 40px;
+    text-align: center;
+    color: #fff;
+    background: #ff9900;
+    font-size: 18px;
+    line-height: 40px;
+    margin-top: 10px;
+    border-radius: 2px;
+}

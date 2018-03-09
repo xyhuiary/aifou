@@ -1,0 +1,452 @@
+#header {
+    height: 79px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+#header a:hover {
+    color: #23A96F;
+    cursor: pointer;
+}
+
+#header a.logo {
+    float: left;
+    line-height: 79px;
+    margin: 0 50px;
+}
+
+#header .header_l {
+    float: left;
+}
+
+#header .header_l a:hover {
+    border-bottom: 5px solid #23A96F;
+}
+
+#header div a {
+    display: inline-block;
+    height: 74px;
+    line-height: 79px;
+    font-size: 16px;
+    padding: 0 22.5px;
+}
+
+#header .header_r {
+    float: right;
+    margin-right: 50px;
+}
+
+
+/* 分界线----------------------------------- */
+
+#header .header_r .collapse {
+    display: inline-block;
+    position: relative;
+}
+
+#header .header_r .collapse:hover .locker,
+#header .header_r .collapse:hover .shop {
+    display: block;
+}
+
+.hide {
+    display: none !important;
+}
+
+#header .header_r .collapse>a {
+    height: 80px;
+}
+
+#header .header_r .collapse:hover>a {
+    color: #23A96F;
+}
+
+#header .header_r .collapse .shop,
+#header .header_r .collapse .locker {
+    width: 150px;
+    padding: 15px 0;
+    box-shadow: 0px 5px 10px 0 #ccc;
+    border: 1px solid #e5e5e5;
+    background: #fff;
+    position: absolute;
+    top: 79px;
+    z-index: 100;
+    display: none;
+}
+
+#header .header_r .collapse .locker {
+    left: 50%;
+    margin-left: -75px;
+}
+
+#header .header_r .collapse .shop {
+    width: 392px;
+    min-height: 240px;
+    padding: 20px 30px;
+    background: #fff;
+    right: 0;
+}
+
+#header .header_r .collapse .locker a {
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    text-align: center;
+}
+
+#header .header_r .collapse .locker a:hover {
+    color: #fff;
+    background: #23a96f;
+}
+
+#header .header_r .collapse .locker i,
+#header .header_r .collapse .shop i {
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    margin-left: -12px;
+    width: 22px;
+    height: 10px;
+    background: url(../images/icon.png) no-repeat;
+    background-position: -396px -500px;
+}
+
+#header .header_r .collapse .shop i {
+    left: 80%;
+    margin: 0;
+}
+
+#header .header_r a.icon_shop {
+    display: inline-block;
+    padding-left: 42.5px;
+    position: relative;
+}
+
+#header .header_r a.icon_shop:before {
+    content: "";
+    width: 25px;
+    height: 25px;
+    background: url(../images/icon.png) no-repeat;
+    background-position: -104px -4px;
+    transform: scale(0.88);
+    position: absolute;
+    top: 28px;
+    left: 10px;
+}
+
+#header .header_r .collapse:hover a:before {
+    background-position: -304px -4px;
+}
+
+#header .header_r a.icon_shop span {
+    display: inline-block;
+    width: 31px;
+    height: 22px;
+    line-height: 22px;
+    text-align: center;
+    color: #FFF9F4;
+    border-radius: 12px;
+    background-color: #FF9900;
+}
+
+#login {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .7);
+    z-index: 10000;
+    display: none;
+    perspective: 1000px;
+}
+
+#login.show {
+    display: block;
+}
+
+#login .login,
+#login .reg {
+    width: 430px;
+    height: 540px;
+    background: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    border-radius: 2px;
+    transition: transform 1.25s ease;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+}
+
+#login .login {
+    transform: rotateY(0deg) scale(1);
+}
+
+#login>div>p {
+    border-bottom: 1px solid #e5e5e5;
+    line-height: 55px;
+    text-align: center;
+    font-size: 16px;
+    color: #333;
+    position: relative;
+}
+
+#login>div>p i {
+    content: "";
+    width: 40px;
+    height: 40px;
+    background: url(../images/icon.png);
+    background-position: -594px -294px;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    margin-top: -20px;
+    cursor: pointer;
+}
+
+#login>div>p i:hover {
+    background-position-x: -694px;
+}
+
+#login .ipt {
+    padding: 54px;
+}
+
+#login .ipt .text {
+    height: 40px;
+    border: 1px solid #bdbdbd;
+    border-radius: 2px;
+    position: relative;
+    transition: all .3s linear;
+}
+
+#login .ipt .text.activa {
+    border-color: #191919;
+}
+
+#login .ipt .text input {
+    line-height: 40px;
+    border-right: none;
+    width: 173px;
+    font-size: 16px;
+    padding: 0 15px;
+    position: absolute;
+}
+
+#login .ipt .text .mask {
+    position: absolute;
+    right: 0;
+    line-height: 40px;
+    font-size: 16px;
+    width: 300px;
+    padding-left: 20px;
+    color: #bdbdbd;
+    cursor: text;
+    transition: all .3s linear;
+}
+
+#login .ipt .text .activa {
+    width: 116px;
+    padding: 0;
+    text-align: center;
+    color: #191919;
+    border-left: 1px solid #191919;
+    cursor: default;
+}
+
+#login .ipt .text .yzm_img {
+    float: right;
+    height: 40px;
+    width: 116px;
+    border-left: 1px solid #bdbdbd;
+    transition: all .3s linear;
+}
+
+#login .ipt .warn {
+    height: 35px;
+}
+
+#login .ipt .warn span {
+    opacity: 0;
+    transition: opacity .3s linear;
+}
+
+#login .ipt .warn span.clue {
+    display: inline-block;
+    padding: 2px 5px;
+    border-radius: 2px;
+    background: #d00;
+    margin: 2px 0 0 16px;
+    color: #fff;
+    opacity: 1;
+}
+
+#login .ipt input[type="submit"] {
+    width: 100%;
+    color: #fff;
+    background: #23a96f;
+    cursor: pointer;
+}
+
+#login .ipt .icon {
+    margin-top: 30px;
+    border-top: 1px solid #e5e5e5;
+    padding-top: 15px;
+}
+
+#login .icon_btn {
+    height: 20px;
+    width: 45px;
+    margin: 0 auto;
+    cursor: pointer;
+    background: url(../images/reg.png) no-repeat center top;
+    text-align: center;
+    padding-top: 32px;
+    padding-left: 1px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#login .icon_btn:hover {
+    background-image: url(../images/reg_h.png);
+}
+
+#login .icon_btn:hover {
+    color: #23a96f;
+}
+
+#login .reg .icon_btn {
+    background-image: url(../images/login.png);
+}
+
+#login .reg .icon_btn:hover {
+    background-image: url(../images/login_h.png);
+}
+
+#login .reg {
+    transform: rotateY(-180deg) scale(0.5);
+}
+
+#login .login_s {
+    transform: rotateY(180deg) scale(0.5);
+}
+
+#login .reg_s {
+    transform: rotateY(0deg) scale(1);
+}
+
+
+/*购物车*/
+
+
+/* 空 */
+
+#header .header_r .collapse .shop .kong {
+    text-align: center;
+    padding: 120px 0 100px;
+}
+
+#header .header_r .collapse .shop .kong p {
+    padding-top: 20px;
+    font-size: 16px;
+    color: #999;
+}
+
+
+/* 有 */
+
+#header .header_r .collapse .shop .time {
+    padding-left: 30px;
+}
+
+#header .header_r .collapse .shop .time::before {
+    content: "";
+    position: absolute;
+    left: 30px;
+    width: 20px;
+    height: 20px;
+    background: url(../images/icon.png) no-repeat;
+    background-position: -600px -800px;
+}
+
+#header .header_r .collapse .shop .time span {
+    color: #23a96f;
+    padding: 0 6px;
+}
+
+#header .header_r .collapse .shop .poss {
+    padding: 20px 0;
+    border-bottom: 1px solid #e5e5e5;
+    position: relative;
+}
+
+#header .header_r .collapse .shop .poss img {
+    width: 100px;
+}
+
+#header .header_r .collapse .shop .poss .text {
+    float: right;
+    padding: 15px 55px 5px 0;
+}
+
+#header .header_r .collapse .shop .poss .text p {
+    width: 230px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+#header .header_r .collapse .shop .poss .text p:nth-child(1) {
+    color: #666;
+}
+
+#header .header_r .collapse .shop .poss .text p:nth-child(2) {
+    color: #999;
+    height: 36px;
+    line-height: 36px;
+}
+
+#header .header_r .collapse .shop .settle div {
+    float: left;
+    padding-top: 20px;
+}
+
+#header .header_r .collapse .shop .settle div p {
+    color: #999;
+}
+
+#header .header_r .collapse .shop .settle div p:last-child {
+    color: #ff9900;
+    font-size: 18px;
+}
+
+#header .header_r .collapse .shop .settle a {
+    float: right;
+    background: #23a96f;
+    margin-top: 20px;
+    height: 40px;
+    line-height: 40px;
+    padding: 0;
+    text-align: center;
+    width: 130px;
+    color: #fff;
+    border-radius: 2px;
+}
+
+#header .header_r .collapse .shop .poss i {
+    position: absolute;
+    width: 20px;
+    height: 28px;
+    background: url(../images/icon.png);
+    background-position: -303px -400px;
+    top: 50%;
+    margin-top: -14px;
+    left: 346px;
+    cursor: pointer;
+}
+
+#header .header_r .collapse .shop .poss i:hover {
+    background-position-x: -403px;
+}

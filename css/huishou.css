@@ -1,0 +1,124 @@
+#header_img {
+    height: 450px;
+    min-width: 1200px;
+    background: url(../images/sale-bg.jpg) center;
+    background-size: cover;
+}
+
+#product .product_title {
+    padding: 50px 0;
+    text-align: center;
+}
+
+#product .product_title h3 {
+    font-size: 28px;
+    color: #666;
+}
+
+#product .product_title p {
+    font-size: 16px;
+    color: #999;
+    padding-top: 5px;
+}
+
+#product .product_type {
+    text-align: center;
+}
+
+#product .product_type a {
+    display: inline-block;
+    text-align: center;
+    width: 60px;
+    height: 88px;
+    margin: 0 25px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+#product .product_type a p {
+    font-size: 16px;
+    line-height: 36px;
+}
+
+#product .product_type a.active p {
+    color: #23A96F;
+    border-bottom: 2px solid #23A96F;
+}
+
+#product .product_content {
+    background: #f5f5f5;
+    padding-bottom: 75px;
+}
+
+#product .product_content .product_type_child {
+    padding: 0 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+#product .product_content .product_type_child a {
+    display: inline-block;
+    padding: 0 25px;
+    margin: 12px 5px;
+    line-height: 30px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#product .product_content .product_type_child a:hover {
+    background: #fff;
+}
+
+#product .product_content .product_type_child a.active {
+    color: #23A96F;
+}
+
+#product .product_content .product_list a {
+    float: left;
+    margin: 10px 5px 0 5px;
+    width: 230px;
+    padding: 50px 0;
+    text-align: center;
+    background: #fff;
+}
+
+#product .product_content .product_list a img {
+    margin-bottom: 20px;
+    width: 160px;
+}
+#help{
+    padding-bottom: 100px;
+}
+#help h3{
+    padding: 50px 0 20px;
+    font-size: 18px;
+}
+#help h3 a{
+    float: right;
+    font-size: 14px;
+    text-decoration: underline;
+}
+#help h3 a:hover{
+    color: #23A96F;
+}
+#help .help_text {
+    background: #f5f5f5;
+    margin-bottom: 20px;
+}
+#help .help_text p{
+    padding: 20px;
+    border-bottom: 1px solid #fff;
+}
+#help .help_text p:first-child{
+    font-size: 16px;
+}
+#help .help_text p span{
+    float: left;
+    height: 100%;
+}
+#help .help_text p:last-child{
+    padding-left: 44px;
+}
+#help .help_text p:last-child:before{
+    content: "A：";
+    margin-left: -24px;
+}
